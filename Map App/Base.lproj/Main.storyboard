@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Map_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xoh-yM-idp">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Point description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PHB-wL-QTv">
+                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KY5-iU-0UV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggZ-QG-Vhm">
+                                <rect key="frame" x="20" y="323" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="n4K-EH-Ht1"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Add Point"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addPoint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dbu-fx-Y1a"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude: 0   Longitude : 0   Altitude: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIr-0p-Vw4">
+                                <rect key="frame" x="20" y="38" width="560" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="hmZ-in-fLQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed: 0mps  Course: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjN-N3-1vc">
+                                <rect key="frame" x="20" y="97" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="064-Ug-0Cc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUe-Mw-SUe">
+                                <rect key="frame" x="20" y="473" width="560" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="ybq-Cs-6iH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xoh-yM-idp" secondAttribute="bottom" id="4zP-3r-SPJ"/>
+                            <constraint firstItem="yIr-0p-Vw4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5cv-Bw-XaQ"/>
+                            <constraint firstItem="hjN-N3-1vc" firstAttribute="top" secondItem="yIr-0p-Vw4" secondAttribute="bottom" constant="8" id="C70-t1-gEp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FUe-Mw-SUe" secondAttribute="bottom" constant="8" id="DQO-8a-hVK"/>
+                            <constraint firstItem="ggZ-QG-Vhm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JNN-ay-n9u"/>
+                            <constraint firstItem="FUe-Mw-SUe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LZU-dk-Owa"/>
+                            <constraint firstItem="ggZ-QG-Vhm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MDI-jX-ouV"/>
+                            <constraint firstItem="xoh-yM-idp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Mnj-fS-Zus"/>
+                            <constraint firstItem="yIr-0p-Vw4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Mx4-TM-Xcw"/>
+                            <constraint firstItem="PHB-wL-QTv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SHp-BB-5bQ"/>
+                            <constraint firstItem="FUe-Mw-SUe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TS4-Le-Hg0"/>
+                            <constraint firstItem="PHB-wL-QTv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="UMF-bE-fhI"/>
+                            <constraint firstItem="yIr-0p-Vw4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="UMH-Ol-0bj"/>
+                            <constraint firstItem="PHB-wL-QTv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZYf-wa-BHl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xoh-yM-idp" secondAttribute="trailing" constant="-20" id="c0z-8S-NQC"/>
+                            <constraint firstItem="xoh-yM-idp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iyB-st-SJS"/>
+                            <constraint firstItem="hjN-N3-1vc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kyM-nQ-YF6"/>
+                            <constraint firstItem="ggZ-QG-Vhm" firstAttribute="top" secondItem="PHB-wL-QTv" secondAttribute="bottom" constant="8" id="m0n-fF-e0X"/>
+                            <constraint firstItem="hjN-N3-1vc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="q7J-Fr-Qmb"/>
+                            <constraint firstItem="ggZ-QG-Vhm" firstAttribute="top" secondItem="PHB-wL-QTv" secondAttribute="bottom" constant="8" id="rAg-9k-zCa"/>
+                            <constraint firstItem="FUe-Mw-SUe" firstAttribute="top" secondItem="ggZ-QG-Vhm" secondAttribute="bottom" constant="120" id="sEq-kM-8RQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="ggZ-QG-Vhm" id="QGc-YN-8mC"/>
+                        <outlet property="addressLabel" destination="FUe-Mw-SUe" id="6JY-my-RSq"/>
+                        <outlet property="coordinateLabel" destination="yIr-0p-Vw4" id="Twx-o0-eoU"/>
+                        <outlet property="myMap" destination="xoh-yM-idp" id="v4z-6c-dlP"/>
+                        <outlet property="pointDescription" destination="PHB-wL-QTv" id="Ow4-11-d6c"/>
+                        <outlet property="speedLabel" destination="hjN-N3-1vc" id="V6h-cX-zUW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="337"/>
+        </scene>
+    </scenes>
+</document>

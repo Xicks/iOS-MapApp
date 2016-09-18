@@ -1,0 +1,8 @@
+MAP APP
+==========================================
+iOS App developed using Swift 2 Language.
+
+Uses the GPS to show the current location, address, latitude, longitude and Speed.
+Allows the creation of pinpoints on the map pressing and holding on the map location.
+
+Use the Debug>>Location option on the simulator to test it.
